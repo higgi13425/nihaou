@@ -5,6 +5,8 @@
 #' @return df_spa - a dataframe with person_id and panes score that shows support for physical activity
 #' @export
 #' @examples
+#' calc_spa(survey_df)
+#'
 calc_spa <- function(survey_df) {
   if (!is.null(survey_df)){
     df_spa  <-  survey_df |>
@@ -17,14 +19,14 @@ calc_spa <- function(survey_df) {
         answer == "Strongly disagree" ~ 1,
         TRUE ~ 999)) |>
       dplyr::filter(value != 999) |> # remove skipped Q
-      dplyr::mutate(value = dplyr:::case_when(
+      dplyr::mutate(value = dplyr::case_when(
         # reverse code 2 Qs
         question_concept_id == 40192492 ~ 5 - value,
         question_concept_id == 40192414 ~ 5 - value,
         TRUE ~ value)) |>
       dplyr::group_by(person_id) |>
       dplyr::mutate(spa = sum(value,
-           na.rm = TRUE,
+           na.rm = TRUE),
             nrows = length(value)) |> # did they answer all 7 Q?
       dplyr::filter(nrows == 7) |> # kick out if not 7      dplyr::select(person_id, spa) |>
       dplyr::ungroup() # remember to ungroup

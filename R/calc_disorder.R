@@ -5,6 +5,8 @@
 #' @return df_disorder - a dataframe with person_id and disorder score
 #' @export
 #' @examples
+#' calc_disorder(survey_df)
+#'
 calc_disorder <- function(survey_df) {
   if (!is.null(survey_df)){
     df_disorder  <-  survey_df |>
@@ -17,7 +19,7 @@ calc_disorder <- function(survey_df) {
         answer == "Strongly disagree" ~ 1,
         TRUE ~ 999)) |>
       dplyr::filter(value != 999) |> # remove skipped Q
-      dplyr::mutate(value = dplyr:::case_when(
+      dplyr::mutate(value = dplyr::case_when(
         # reverse code 4 Qs
         question_concept_id == 40192456 ~ 5 - value,
         question_concept_id == 40192386 ~ 5 - value,

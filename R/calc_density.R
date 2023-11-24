@@ -6,6 +6,8 @@
 #' @export
 #'
 #' @examples
+#' calc_density(survey_df)
+#'
 calc_density <- function(survey_df) {
   if (!is.null(survey_df)){
     df_density  <-  survey_df |>

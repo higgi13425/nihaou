@@ -6,6 +6,8 @@
 #' @export
 #'
 #' @examples
+#' calc_cohesion(survey_df)
+#'
 calc_cohesion <- function(survey_df) {
   if (!is.null(survey_df)){
     df_cohesion  <-  survey_df |>
