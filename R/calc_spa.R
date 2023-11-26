@@ -14,8 +14,8 @@ calc_spa <- function(survey_df) {
       dplyr::select(person_id, question_concept_id, answer) |>
       dplyr::mutate(value = dplyr::case_when(
         answer == "Strongly agree" ~ 4,
-        answer == "Agree" ~ 3,
-        answer == "Disagree" ~ 2,
+        answer == "Somewhat agree" ~ 3,
+        answer == "Somewhat disagree" ~ 2,
         answer == "Strongly disagree" ~ 1,
         TRUE ~ 999)) |>
       dplyr::filter(value != 999) |> # remove skipped Q
@@ -28,7 +28,8 @@ calc_spa <- function(survey_df) {
       dplyr::mutate(spa = sum(value,
            na.rm = TRUE),
             nrows = length(value)) |> # did they answer all 7 Q?
-      dplyr::filter(nrows == 7) |> # kick out if not 7      dplyr::select(person_id, spa) |>
+      dplyr::filter(nrows == 7) |> # kick out if not 7
+      dplyr::distinct(person_id, .keep_all = TRUE) |>
       dplyr::ungroup() # remember to ungroup
   }
   df_spa

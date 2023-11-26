@@ -18,7 +18,7 @@ calc_density <- function(survey_df) {
         answer == "PMI: Dont Know" ~ "High",
         answer == "PMI: Skip" ~ "High",
         answer == "Does not apply to my neighborhood" ~ "High",
-        TRUE ~ "none")) |>
+        TRUE ~ "High")) |>
       dplyr::filter(density != "none") |> # remove NAs
       dplyr::group_by(person_id) |>
       dplyr::select(person_id, density) |>
