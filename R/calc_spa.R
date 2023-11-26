@@ -2,7 +2,7 @@
 #'
 #' @param survey_df - a survey dataframe including SDOH
 #'
-#' @return df_spa - a dataframe with person_id and panes score that shows support for physical activity
+#' @return df_spa - a dataframe with person_id and spa score that shows neighborhood support for physical activity
 #' @export
 #' @examples
 #' calc_spa(survey_df)

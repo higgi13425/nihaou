@@ -12,7 +12,7 @@ calc_spa(survey_df)
 }}
 }
 \value{
-df_spa - a dataframe with person_id and panes score that shows support for physical activity
+df_spa - a dataframe with person_id and spa score that shows neighborhood support for physical activity
 }
 \description{
 Calculate neighborhood PANES (Physical Activity Neighborhood Environment Scale) aka Support for Physical Activity (spa) score
