@@ -11,7 +11,7 @@
 
 The goal of nihaou is to provide functions to calculate Social
 Determinants of Health summary scores for the NIH All of Us Research
-Program.
+Program from individual survey responses.
 
 ## Installation
 
