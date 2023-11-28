@@ -4,14 +4,13 @@
 # nihaou
 
 <!-- badges: start -->
-
-\# nihaou
-<a href="https://higgi13425.github.io/nihaou/"><img src="man/figures/logo.png" align="right" height="137" alt="nihaou website" /></a>
 <!-- badges: end -->
 
 The goal of nihaou is to provide functions to calculate Social
 Determinants of Health summary scores for the NIH All of Us Research
 Program from individual survey responses.
+
+# nihaou <a href="https://higgi13425.github.io/nihaou/"><img src="man/figures/logo.png" align="right" height="137" alt="nihaou website" /></a>
 
 ## Installation
 
