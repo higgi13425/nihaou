@@ -5,7 +5,7 @@
 #' @return df_disorder - a dataframe with person_id and disorder score
 #' @export
 #' @examples
-#' calc_disorder(survey_df)
+#' calc_disorder(fake_survey_df)
 #'
 calc_disorder <- function(survey_df) {
   if (!is.null(survey_df)){

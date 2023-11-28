@@ -5,7 +5,7 @@
 #' @return df_spa - a dataframe with person_id and spa score that shows neighborhood support for physical activity
 #' @export
 #' @examples
-#' calc_spa(survey_df)
+#' calc_spa(fake_survey_df)
 #'
 calc_spa <- function(survey_df) {
   if (!is.null(survey_df)){
@@ -30,7 +30,8 @@ calc_spa <- function(survey_df) {
             nrows = length(value)) |> # did they answer all 7 Q?
       dplyr::filter(nrows == 7) |> # kick out if not 7
       dplyr::distinct(person_id, .keep_all = TRUE) |>
-      dplyr::ungroup() # remember to ungroup
+      dplyr::ungroup()
+    # remember to ungroup
   }
   df_spa
 }

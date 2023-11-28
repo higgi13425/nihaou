@@ -1,4 +1,4 @@
-#' Survey_df
+#' fake_survey_df
 #'
 #' dataframe of fake survey data (generated in data-raw) to
 #' enable testing of functions for survey data.
@@ -13,4 +13,4 @@
 #'
 #' For further details on the SDOH survey for NIH AllOfUs, see \url{https://www.researchallofus.org/data-tools/survey-explorer/social-determinants-survey/}
 #'
-"survey_df"
+"fake_survey_df"

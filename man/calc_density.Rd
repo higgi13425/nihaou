@@ -18,6 +18,6 @@ df_density - a dataframe with person_id and density level
 Calculate neighborhood density level
 }
 \examples{
-calc_density(survey_df)
+calc_density(fake_survey_df)
 
 }

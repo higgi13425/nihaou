@@ -2,10 +2,12 @@ Package: nihaou
 Title: Helper Functions for the NIH All Of Us Research Program
 Version: 0.0.0.9000
 Authors@R: 
-    person("Caitlin", "Dreisbach", , "caitlin_dreisbach@urmc.rochester.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0003-3964-3161"))
+    person("Theresa", "Koleck", , "tak150@pitt.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2944-9034"))
     person("Peter", "Higgins", , "higgi13425@yahoo.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-1602-4341"))
+    person("Caitlin", "Dreisbach", , "caitlin_dreisbach@urmc.rochester.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3964-3161"))
 Description: This package provides helper functions for working with data from the NIH All Of Us Research Program. These include functions for calculating Social Determinants of Health scores and for writing listing, and reading data files to and from the storage bucket provided within Google Storage.
 License: MIT + file LICENSE
 Encoding: UTF-8

@@ -18,6 +18,6 @@ df_cohesion - a dataframe with person_id and cohesion score
 Calculate neighborhood cohesion score
 }
 \examples{
-calc_cohesion(survey_df)
+calc_cohesion(fake_survey_df)
 
 }

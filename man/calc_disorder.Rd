@@ -18,6 +18,6 @@ df_disorder - a dataframe with person_id and disorder score
 Calculate neighborhood disorder score
 }
 \examples{
-calc_disorder(survey_df)
+calc_disorder(fake_survey_df)
 
 }

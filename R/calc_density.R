@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' calc_density(survey_df)
+#' calc_density(fake_survey_df)
 #'
 calc_density <- function(survey_df) {
   if (!is.null(survey_df)){

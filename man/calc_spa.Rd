@@ -18,6 +18,6 @@ df_spa - a dataframe with person_id and spa score that shows neighborhood suppor
 Calculate neighborhood PANES (Physical Activity Neighborhood Environment Scale) aka Support for Physical Activity (spa) score
 }
 \examples{
-calc_spa(survey_df)
+calc_spa(fake_survey_df)
 
 }
