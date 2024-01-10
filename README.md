@@ -59,4 +59,4 @@ workspace with the following functions:
 
 There are only 4 functions built so far, and each of them has one
 working test. To be able to calculate all of the scores, we will need
-another 17 functions or so.
+another 24 functions or so.
