@@ -18,7 +18,7 @@ calc_density <- function(survey_df) {
         answer_concept_id == 40192407 ~ "Low", # Detached single-family housing
         answer_concept_id == 903087 ~ "none", # PMI: Dont Know
         answer_concept_id == 903096 ~ "none", # PMI: Skip
-        answer_concept_id == 40192520 ~ "none", # Does not apply to my neighborhood ALEX CHECK THIS
+        answer_concept_id == 40192520 ~ "none", # Does not apply to my neighborhood
         TRUE ~ "High")) |>
       dplyr::filter(density != "none") |> # remove NAs
       dplyr::group_by(person_id) |>
